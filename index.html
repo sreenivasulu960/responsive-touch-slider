@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My 3D slider</title>
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="https://media.gettyimages.com/photos/google-ceo-sundar-pichai-during-the-central-and-eastern-europe-at-picture-id1085999374?k=20&m=1085999374&s=612x612&w=0&h=oHXQTXkfiBEajDFx3clsvdk56GMzLSBvBKJeW11Iai0=">
+          </div>
+          <div class="details">
+            <h3>Sundar Pichai<br><span>Google CEO</span></h3>
+          </div>  
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="https://wallpapercave.com/wp/wp6760164.jpg">
+          </div>
+          <div class="details">
+            <h3>Satya Nadella<br><span>Microsoft CEO</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="https://wallpapercave.com/wp/wp5192957.jpg">
+          </div>
+          <div class="details">
+            <h3>Elon Musk<br><span>CEO OF Tesla and Spacex</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="https://media.gettyimages.com/photos/andy-jassy-the-ceo-of-amazon-speaks-at-the-ceremonial-ribbon-cutting-picture-id1348139958?s=612x612">
+          </div>
+          <div class="details">
+            <h3>Andy Jassey<br><span>Amazon CEO</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="https://wallpapercave.com/dwp1x/wp2126169.jpg">
+          </div>
+          <div class="details">
+            <h3>Mark Zuckerberg<br><span>Facebook CEO</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>  	
+  	<script type="text/javascript" src="swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 5,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
